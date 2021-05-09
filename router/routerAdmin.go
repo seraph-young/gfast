@@ -5,6 +5,7 @@ import (
 	"gfast/app/controller/common"
 	"gfast/hook"
 	"gfast/middleWare"
+
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"
 )

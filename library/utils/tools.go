@@ -2,6 +2,7 @@ package utils
 
 import (
 	"fmt"
+	"gfast/domain"
 	"net"
 	"time"
 
@@ -152,6 +153,7 @@ func GetRealFilesUrl(r *ghttp.Request, path string) (realPath string, err error)
 
 //获取当前请求接口域名
 func GetDomain(r *ghttp.Request) (string, error) {
+	return domain.Domain, nil
 	pathInfo, err := gurl.ParseURL(r.GetUrl(), -1)
 	if err != nil {
 		g.Log().Error(err)
